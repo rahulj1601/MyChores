@@ -1,0 +1,88 @@
+/* Design of the allChores section where a vertical menu of users is shown and corresponding chores are shown */
+
+#allChores{
+    background:white;
+    height: fit-content;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    position:relative;
+}
+
+.choreGroup{
+    margin:20px;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Controls the design of the clear all buton in the done section */
+
+#clearAllButton{
+    border:1px solid #00A92A;
+    border-radius:10px;
+    font-size:13px;
+    background-color:#00A92A;
+    color:white;
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+#clearAllButton:hover{
+    background-color: #59c975;
+    border:1px solid #59c975;
+}
+
+/* Design of the vertical side menu */
+
+#vertical-menu{
+    display:block;
+}
+
+#vertical-menu button {
+    background-color: #eee; 
+    color: black; 
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border:none;
+    width:100%;
+}
+
+#vertical-menu button:hover {
+    background-color: #ccc;
+}
+
+#vertical-menu button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Design of each chore and how it is displayed to the user */
+
+.singleChore{
+    border:1px solid #D9DADB;
+    color:#5C6369;
+    margin-bottom: 3px;
+    padding:10px;
+    position: relative;
+}
+
+.singleChore:hover{
+    background-color: #F8F9FA;
+}
+
+/* Bouncing scroll down arrow displayed only when there is an overflow */
+
+.scrollDownArrow{
+    position: absolute;
+    bottom: 0px;
+    left: 60%;
+    display:none;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-10px);}
+}

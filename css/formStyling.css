@@ -1,0 +1,70 @@
+/* General Form Styling */ 
+.user_form input::placeholder {
+    color:#ADADAD;
+}
+
+.user_form input[type=text], .user_form input[type=password]{
+    width:90%;
+    margin:10px 0px 10px 0px;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.user_form input[type=text]:focus, input[type=password]:focus {
+    border-bottom: 1px solid #01a82d;
+    outline: none;
+}
+
+.user_form input[type=submit] {
+    padding: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid #01a82d;
+    border-radius: 10px;
+    color:white;
+    margin-top:30px;
+    display:block;
+    background-color:#01a82d;
+    border:0px;
+    width:50%;
+}
+
+.user_form input[type=submit]:hover {
+    background-color:#2abb51;
+}
+
+.user_form input[type=submit]:active, .user_form input[type=submit]:focus{
+    background-color:#2abb51;
+    box-shadow: 0 0 0 0.2rem #7de097 !important;
+}
+
+.user_form label{
+    color:#ADADAD;
+}
+
+.user_form input:focus{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+    border-bottom:1px solid #01a82d !important;
+}
+
+.user_form textarea, .user_form  input[type=text], .user_form input[type=number], .user_form input[type=datetime-local]{
+    border-radius: 0px;
+}
+  
+.user_form textarea{
+    width:100%;
+    height:40px;
+}
+
+
+/* The styling for forms which are included on modals */
+.modalForm .input-group{
+    margin-bottom: 5px;
+}

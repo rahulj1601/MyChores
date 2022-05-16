@@ -1,0 +1,226 @@
+/* Required imports for the index.php section */
+
+@import "formValidation.css";
+@import "formStyling.css";
+@import "dropdown.css";
+@import "all_chores.css";
+@import "modalStyling.css";
+@import "loader.css";
+
+/* General main styling */
+
+body{
+  margin:0;
+}
+
+.container-fluid{
+  padding: 0 !important;
+}
+
+.grey_container{
+  background-color: rgb(245, 245, 245);
+  padding: 30px 50px 30px 50px;
+  font-family: 'Poppins', sans-serif;
+  min-height: calc(100 * 1vh - 150px);
+}
+
+.col{
+  padding: 0;
+}
+
+/* Mobile Styling - adapts site to different screen sizes */
+
+@media (min-width:500px){
+  .dropdown {
+    top:0px;
+    right:0px;
+  }
+  #carouselEditChore svg{
+    top:10px;
+    left:10px;
+  }
+  .singleChoreDate{
+    position:absolute;
+    top:10px;
+    right:10px;
+  }
+}
+
+@media (max-width:499.98px){
+  .dropdown {
+    top:-10px;
+    right:-5px;
+  }
+  #carouselEditChore svg{
+    top:0px;
+    left:0px;
+  }
+  .singleChoreDate{
+    display:block;
+  }
+}
+
+/* No Household Styling */
+
+.green_container{
+  background: #36af54;
+  padding: 50px;
+  min-height: calc(100 * 1vh - 150px);
+  font-family: 'Poppins', sans-serif;
+}
+
+.green_container p{
+  font-size:20px;
+}
+
+#newHousehold{
+  color:black;
+  text-align: center;
+  margin:20px;
+  padding:40px;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#existingHousehold{
+  color:black;
+  text-align: center;
+  margin:20px;
+  padding:40px;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Carousel of users chores styling */
+
+#carouselControls{
+  margin-bottom: 30px;
+  padding:20px 20px 30px 20px;
+  color:white;
+  background:#23993e;
+}
+
+#carouselEditChore svg{
+  position:absolute;
+  display: block;
+  fill:white;
+  z-index:2;
+}
+
+#carouselEditChore svg:hover{
+  fill:black;
+}
+
+/* Some button styling */
+
+.bg-success{
+  background-color:#00A92A !important;
+}
+
+.btn:focus,.btn:active{
+  border:none !important;
+  box-shadow: none;
+  border:0px solid transparent !important;
+}
+
+/* List group overdue chore styling */
+
+#skipChore{
+  color:red;
+  fill:red;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  border:none;
+  background:transparent;
+  transform: scaleX(-1) rotate(-15deg);
+}
+
+#skipChore svg{
+  width:20px;
+  height:20px;
+  fill:red;
+}
+
+#skipChore svg:hover{
+  fill:black;
+}
+
+/* Bottom Corner Menu */
+.sticky{
+  position: -webkit-sticky;
+  position:sticky;
+  bottom: 0;
+  z-index: 99;
+}
+
+#cornerMenu{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: rgb(26, 24, 24);
+}
+
+@keyframes rotate {
+  100% {transform: rotate(90deg);}
+}
+
+@keyframes backRotate {
+  100% {transform: rotate(0deg);}
+}
+
+#menuItems .singleItem{
+  border: none;
+  border-radius: 50%;
+  padding:7px;
+  background-color: rgb(26, 24, 24);
+  margin: 10px 0px 10px 0px;
+}
+
+#menuItems .singleItem:hover{
+  opacity:0.8;
+}
+
+#menuItems{
+  display:none;
+  position:absolute;
+  bottom: 50px;
+  right: 10px;
+  opacity: 0;
+}
+
+/* Draggable walkthrough styling */
+
+#walkthrough{
+  display:none;
+  width:350px;
+  height:200px;
+  padding:20px 10px 20px 10px;
+  position:fixed;
+  bottom:80px;
+  right:70px;
+  color:white;
+  background-color:#25259b;
+  z-index:999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  cursor:move;
+}
+
+#closeWalkthrough{
+  position: absolute;
+  top:0px;
+  right:0px;
+  cursor: pointer;
+}
+
+#walkthrough p{
+  width:250px;
+  margin:auto;
+}

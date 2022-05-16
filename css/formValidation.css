@@ -1,0 +1,25 @@
+/* Styling for warnings, errors and dislaying whether an input is correct */
+
+.input-icon .warning svg { 
+    display:none;
+    position: absolute; 
+    right:0px;
+    bottom: 20px;
+} 
+
+.input-icon .tick svg { 
+    display:none;
+    position: absolute; 
+    right:0px;
+    bottom: 20px;
+} 
+  
+.input-icon { 
+    width: 100%; 
+    margin-bottom: 10px; 
+} 
+
+.error{
+    color:red;
+    display:none;
+}

@@ -1,0 +1,22 @@
+/* Styling for the loader which is the logo performing a 3D rotation */
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display:block;
+}
+
+#loader img{
+    width: 100px;
+    height: 100px;
+    animation: dimensionRotation 2s infinite;
+}
+
+@keyframes dimensionRotation {
+    0% {transform: rotateY(0deg);}
+    40% {transform: rotateY(180deg);}
+    100% {transform: rotateY(360deg);}
+}
