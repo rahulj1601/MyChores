@@ -1,7 +1,12 @@
 #MyChores (fully compatible with Chrome)
 
+##What is MyChores?
 MyChores is a web app where users can form their own household and add 
 various chores to complete around the house
+
+##How can it be viewed?
+Because this is a web app I have developed which requires an external database to store user information, 
+it must make use of web hosting which is not currently set up.
 
 ##Description of Required Features
 
